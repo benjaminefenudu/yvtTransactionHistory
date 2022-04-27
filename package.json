@@ -1,0 +1,19 @@
+{
+  "name": "TransactionLog",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "nodemon build/src/interface/http/server.js",
+    "postinstall": "npm run build",
+    "start": "node build/src/interface/http/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/amqplib": "^0.8.2",
+    "dotenv": "^16.0.0",
+    "mongoose": "^6.3.0",
+    "typescript": "^4.6.3"
+  }
+}
