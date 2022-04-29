@@ -13,7 +13,6 @@ messenger.createChannel().then(() => {
   //consume events
   messenger.saveTransactionLog();
 
-
   //listen for requests
   const PORT = process.env.PORT || 4004;
 
